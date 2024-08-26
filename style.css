@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: #f9f9f9;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 100000;
+}
+.header-content{
+    max-width: 1300px;
+    width:100%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:25px 40px 25px 50px;
+}
+.left-side .logo{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color:#2d2e32;
+}
+.right-side ul{
+    display: flex;
+    gap:20px;
+}
+.right-side ul li{
+    position: relative;
+}
+.right-side ul li a{
+    color:#2d2e32;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.right-side ul li a::after{
+    content: '';
+    height:3px;
+    width:0;
+    position: absolute;
+    background-color: rgb(36, 80, 175);
+    bottom:-7px;
+    left:0;
+    border-radius: 1000px;
+    transition: all 0.2s ease-in-out;
+}
+
+.right-side ul li a:hover::after{
+    width: 100%;
+}
+
+/* hero section */
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    /* background-color: red; */
+    min-height: 100vh;
+    position: relative;
+}
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    min-height: 36rem;
+    gap:8rem;
+}
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.hero-left span{
+    display: flex;
+}
+.hero-left h1{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.hero-left img{
+    vertical-align: middle;
+    position: relative;
+    top:-10px;
+}
+.hero-left p{
+    max-width: 450px;
+    color:#555;
+}
+.social-links ul{
+    display: flex;
+    gap:20px;
+}
+.social-links ul li a svg{
+    transition: all 0.3s ease-in-out;
+}
+
+.social-links ul li a:visited{
+    color:black;
+}
+
+.social-links ul li a svg:hover{
+    scale: 1.3;
+}
+.profile-img{
+    border-radius:200px;
+    object-fit: cover;
+    object-position: center;
+    border:3px solid black;
+    animation: morph 8s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+@keyframes morph{
+0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+}
+100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+}
+
+/* media queries for hero section */
+@media (max-width:920px){
+    .hero-content{
+        flex-direction: column;
+        min-height:55rem;
+        justify-content: center;
+        gap:20px;
+        align-items: center;
+    }
+    .profile-img{
+        order: -100;
+    }
+    .hero-left{
+        text-align: center;
+        order: 10;
+        align-items: center;
+    }
+    .skills{
+        flex-direction: column;
+        align-items: center;
+        position:  relative !important;
+    }
+
+    .skills > p{
+        border-right:none !important;
+        border-bottom: 2px solid rgba(45, 46, 50, .5);
+        padding-right: 0 !important;
+        padding-bottom:  10px;
+    }
+
+    .tech-skills img {
+        align-self: center;
+    }
+}
+
+@media(max-width:400px){
+    .profile-img{
+        height: 280px;
+        width: 280px;
+    }
+    .hero-left  h1{
+        font-size: 2.5rem;
+    }
+}
+@media(max-width:350px){
+    .profile-img{
+        height: 240px;
+        width: 240px;
+    }
+    .hero-left  h1{
+        font-size: 2rem;
+    }
+}
+@media(max-width:350px){
+    .profile-img{
+        height: 200px;
+        width: 200px;
+    }
+    .hero-left  h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+/* tech stack */
+.skills{
+    position: absolute;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.skills > p{
+    font-size:0.95rem;
+    font-weight: 600;
+    border-right: 2px solid rgba(45, 46, 50, .5);
+    padding-right:20px;
+    white-space: nowrap;
+}
+.tech-skills ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.tech-skills ul li {
+    cursor: pointer;
+}
+.tech-skills ul li img{
+    transition:all 0.3s ease-in-out ;
+}
+
+.tech-skills ul li img:hover{
+    transform: translateY(-15px);
+}
