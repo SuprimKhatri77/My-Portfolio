@@ -66,18 +66,20 @@ header{
 
 .right-side ul li a::after{
     content: '';
-    height:3px;
+    height:2.5px;
     width:0;
     position: absolute;
-    background-color: rgb(36, 80, 175);
+    background-color: #28a745;
     bottom:-7px;
-    left:0;
+    left:50%;
     border-radius: 1000px;
-    transition: all 0.2s ease-in-out;
+    /* transform-origin: bottom right; */
+    transition: width 0.3s ease, left 0.3s ease;
 }
 
 .right-side ul li a:hover::after{
-    width: 100%;
+    width:100%;
+    left:0;
 }
 .menu-icon{
     font-size: 1.2rem;
