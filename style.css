@@ -10,7 +10,16 @@ body{
     font-family: 'Poppins',sans-serif;
     background-color: #f9f9f9;
 }
-
+::-webkit-scrollbar{
+    background:lightgrey;
+    width:10px;
+    /* border-radius: 100px; */
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#FFFFFF,#6284FF,#FF0000);
+    width:5px;
+    border-radius: 100px;
+}
 ul{
     list-style: none;
 }
@@ -70,6 +79,10 @@ header{
 .right-side ul li a:hover::after{
     width: 100%;
 }
+.menu-icon{
+    font-size: 1.2rem;
+    display: none !important;
+}
 
 /* hero section */
 .container{
@@ -80,7 +93,9 @@ header{
     min-height: 100vh;
     position: relative;
 }
-
+.hero{
+    background-color:#f9f9f9;
+}
 .hero-content{
     display: flex;
     align-items: center;
@@ -177,7 +192,14 @@ header{
         align-self: center;
     }
 }
-
+@media(max-width:860px){
+    .right-side ul li:nth-child(1),.right-side ul li:nth-child(2),.right-side ul li:nth-child(3),.right-side ul li:nth-child(4){
+        display: none;
+    }
+    .right-side ul li i{
+        display: flex !important;
+    }
+}
 @media(max-width:400px){
     .profile-img{
         height: 280px;
@@ -214,6 +236,7 @@ header{
     align-items: center;
     flex-wrap: wrap;
     gap:30px;
+    margin-bottom: 100px;
 }
 .skills > p{
     font-size:0.95rem;
@@ -239,3 +262,137 @@ header{
 .tech-skills ul li img:hover{
     transform: translateY(-15px);
 }
+
+/* about me */
+.container2{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    /* background-color: red; */
+    /* min-height: 100vh; */
+    position: relative;
+}
+.about-me-content{
+    display: flex;
+    gap:80px;
+}
+
+.image-left{
+    position: relative;
+    /* background-color: red; */
+}
+
+.working-img{
+    position: absolute;
+    right:32px;
+    bottom:38px;
+    z-index: 10;
+}
+
+.about-img{
+    border-radius: 20px;
+}
+
+.text-img{
+    position: absolute;
+    right:-37px;
+    bottom: -31px;
+    background-color: white;
+    border-radius: 90px;
+    animation: rotate 9s linear infinite;
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.text-left{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.text-about{
+    color:#147efb;
+    font-size: 17px;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+.intro-head{
+    color:#2d2e32;
+    font-size: 25px;
+}
+
+.about-me-para{
+    font-size: 17px;
+    color:#767676;
+    text-align: justify;
+}
+
+@media (max-width:895px){
+    .about-me-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-img{
+        left:266px;
+    }
+
+    .working-img{
+        left:328px;
+    }
+    .text-left{
+        align-items: center;
+    }
+    .about-me-para{
+        text-align: center;
+    }
+}
+
+@media(max-width:465px){
+    .about-img{
+        height: 250px;
+        width: 370px;
+        flex-shrink: 4;
+    }
+    .working-img{
+      display: none !important;
+      right:40000rem;
+    }
+    .text-img{
+        display: none !important;
+    }
+    .intro-head{
+        text-align: center;
+    }
+}
+
+@media(max-width:415px){
+    .about-img{
+        height: 300px;
+        width: 300px;
+    }
+    .intro-head{
+        text-align: center;
+    }
+}
+@media(max-width:315px){
+    .about-img{
+        height: 250px;
+        width: 250px;
+    }
+    .intro-head{
+        text-align: center;
+    }
+}
+@media(max-width:255px){
+    .about-img{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+
+
