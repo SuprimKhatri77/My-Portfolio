@@ -318,6 +318,7 @@ header{
     /* background-color: red; */
     /* min-height: 100vh; */
     position: relative;
+    padding-bottom: 200px;
 }
 .about-me-content{
     display: flex;
@@ -338,6 +339,8 @@ header{
 
 .about-img{
     border-radius: 20px;
+    object-fit: cover;
+    object-position: right center;
 }
 
 .text-img{
@@ -396,6 +399,9 @@ header{
     .about-me-para{
         text-align: center;
     }
+    .intro-head{
+        text-align: center;
+    }
 }
 
 @media(max-width:465px){
@@ -441,5 +447,111 @@ header{
     }
 }
 
+/* projects section */
+.project-conatiner{
+    display: flex;
+    flex-direction: column;
+}
+.project-content{
+    display: flex;
+    gap:3rem;
+    margin-top: 50px;
+}
+.projects-head{
+    color:#147efb;
+}
 
+.projects-head-desc{
+    font-weight: 650;
+    padding-top: 20px;
+    font-size: 1.1rem;
+}
+.project-image img{
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
 
+.project-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.project-desc > p{
+    text-align: center;
+    color:#767676;
+}
+.project-desc > h2{
+    text-align: center;
+}
+
+.made-with ul{
+    display: flex;
+    gap:20px;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+.code-demo ul{
+    display: flex;
+    gap: 40px;
+}
+
+.code-demo ul li a:visited{
+    color:black;
+}
+
+.code-demo ul li{
+    font-size:1.2rem;
+    font-weight: 600;
+}
+
+.code-demo ul li a i{
+    /* margin-right: 20px; */
+    padding-left: 5px;
+    font-size:1.6rem;
+}
+.code-demo ul li a .share-icon{
+    font-size: 1.2rem;
+}
+
+@media (max-width:800px){
+    .project-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects-head,.projects-head-desc{
+        text-align: center;
+    }
+    .project-image{
+        order: -1;
+    }
+}
+
+@media (max-width:360px){
+    .project-image > img{
+        height: 250px !important;
+        width: 250px !important;
+    }
+}
+@media (max-width:315px){
+    .project-image > img{
+        height: 200px !important;
+        width: 200px !important;
+    }
+}
+@media (max-width:215px){
+    .project-image > img{
+        height: 150px !important;
+        width: 150px !important;
+    }
+}
+
+@media (max-width:325px){
+    .code-demo ul{
+        flex-direction: column;
+        align-items: center;
+        gap:30px;
+    }
+}
