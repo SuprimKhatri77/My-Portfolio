@@ -29,6 +29,8 @@ ul{
 
 a{
     text-decoration: none;
+}
+svg , i {
     color:black;
 }
 /* preloader */
