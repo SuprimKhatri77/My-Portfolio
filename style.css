@@ -458,7 +458,7 @@ header{
 .project-content{
     display: flex;
     gap:3rem;
-    margin-top: 50px;
+    margin-block: 50px;
 }
 .projects-head{
     color:#147efb;
@@ -556,5 +556,99 @@ header{
         flex-direction: column;
         align-items: center;
         gap:30px;
+    }
+}
+
+/* contact section */
+.contact-container{
+    margin-top: 100px;
+    min-height: 30vh;
+}
+.contact-container > p{
+    font-size:1.5rem;
+    font-weight: 650;
+}
+.contact-options{
+    margin-top: 50px;
+    display:flex;
+    gap:70px;
+}
+
+
+.location-side, .mail-side{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.location-side > span, .mail-side > span{
+    background-color:#fff ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    height:3rem;
+    width:3rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.location, .mail{
+    color:#767676;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+.location:hover, .mail:hover{
+    color: #147efb;
+}
+@media (max-width:750px){
+    .contact-container > h3 , .contact-container >p{
+        text-align: center;
+    }
+    .contact-options{
+        flex-direction: column;
+    }
+    .location-side,.mail-side{
+       flex-direction: column;
+       text-align: center;
+    }
+}
+
+/* footer */
+footer{
+    background-color: #2d2e32;
+}
+
+.footer-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    min-height: 30vh;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+.left-footer{
+    font-weight: 650;
+    font-size: 1.1rem;
+}
+.right-footer ul{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.right-footer ul li a svg {
+    transition: transform 0.3s ease-in-out;
+}
+.right-footer ul li a svg:hover {
+    transform: scale(1.5);
+}
+
+@media(max-width:615px){
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+        gap:40px;
+        text-align: center;
     }
 }
