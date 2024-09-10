@@ -1,209 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suprim Khatri | Frontend Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!-- <div class="preloader">
         <div class="spinner"></div>
     </div> -->
     <!-- header section -->
     <header>
-        <ul class="sidebar">
-            <li onclick="hideSideBar();"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+      <ul class="sidebar">
+        <li onclick="hideSideBar();">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="28px"
+            viewBox="0 -960 960 960"
+            width="28px"
+            fill="#000"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-sec">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
+      <div class="header-content">
+        <div class="left-side">
+          <a href="#" class="logo">Suprim.dev</a>
+        </div>
+        <div class="right-side">
+          <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#about-sec">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contacts</a></li>
-        </ul>
-        <div class="header-content">
-        <div class="left-side">
-            <a href="#" class="logo">Suprim.dev</a>
+            <li onclick="showSideBar();">
+              <i class="fa-solid fa-bars menu-icon"></i>
+            </li>
+          </ul>
         </div>
-        <div class="right-side">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about-sec">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contacts</a></li>
-                <li onclick="showSideBar();"><i class="fa-solid fa-bars menu-icon"></i></li>
-            </ul>
-        </div>
-        </div>
+      </div>
     </header>
     <!-- hero section -->
-     <section class="hero">
-        <div class="container">
+    <section class="hero">
+      <div class="container">
         <div class="hero-content">
-        <div class="hero-left">
+          <div class="hero-left">
             <span>
-            <h1>Front-End React <br> Developer <img src="images/waving.1bae5fcfb51082b5c2b4.png" alt="waving-hand" height="60px" width="60px"></h1>
+              <h1>
+                Front-End React <br />
+                Developer
+                <img
+                  src="images/waving.1bae5fcfb51082b5c2b4.png"
+                  alt="waving-hand"
+                  height="60px"
+                  width="60px"
+                />
+              </h1>
             </span>
-            <p>Hi, I'm Suprim Khatri. A passionate Front-end React Developer based in Butwal, Nepal. 📍</p>
+            <p>
+              Hi, I'm Suprim Khatri. A passionate Front-end React Developer
+              based in Butwal, Nepal. 📍
+            </p>
             <div class="social-links">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/suprim-khatri77/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-linkedin"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a></li>
-                    <li><a href="https://github.com/SuprimKhatri77" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a></li>
-                </ul>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/suprim-khatri77/"
+                    target="_blank"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="tabler-icon tabler-icon-brand-linkedin"
+                    >
+                      <path
+                        d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                      ></path>
+                      <path d="M8 11l0 5"></path>
+                      <path d="M8 8l0 .01"></path>
+                      <path d="M12 16l0 -5"></path>
+                      <path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/SuprimKhatri77" target="_blank"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="tabler-icon tabler-icon-brand-github"
+                    >
+                      <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                      ></path></svg
+                  ></a>
+                </li>
+              </ul>
             </div>
-        </div>
-        <p><img src="images/IMG_4698.PNG" alt="profile-image" height="320px" width="320px" class="profile-img"></p>
+          </div>
+          <p>
+            <img
+              src="images/IMG_4698.PNG"
+              alt="profile-image"
+              height="320px"
+              width="320px"
+              class="profile-img"
+            />
+          </p>
         </div>
         <div class="skills">
-           <p>Tech Stack</p>
-           <div class="tech-skills">
+          <p>Tech Stack</p>
+          <div class="tech-skills">
             <ul>
-                <li><img src="https://skillicons.dev/icons?i=html,css" alt="#"></li>
-                <li><img src="https://skillicons.dev/icons?i=js,ts" alt="#"></li>
-                <li><img src="https://skillicons.dev/icons?i=react,next" alt="#"></li>
-                <li><img src="https://skillicons.dev/icons?i=tailwind,scss" alt="#"></li>
+              <li>
+                <img src="https://skillicons.dev/icons?i=html,css" alt="#" />
+              </li>
+              <li>
+                <img src="https://skillicons.dev/icons?i=js,ts" alt="#" />
+              </li>
+              <li>
+                <img src="https://skillicons.dev/icons?i=react,next" alt="#" />
+              </li>
+              <li>
+                <img
+                  src="https://skillicons.dev/icons?i=tailwind,scss"
+                  alt="#"
+                />
+              </li>
             </ul>
-           </div>
+          </div>
         </div>
-        </div>
-     </section>
+      </div>
+    </section>
 
-     <!-- about me -->
-      <section class="about-me" id="about-sec">
-        <div class="container2">
-            <div class="about-me-content">
-        <div class="image-left">
-            <img src="images/working-emoji.c5325f52b5be329995a5.png" alt="working-img" height="60px" width="60px" class="working-img">
-            <img src="images/about-img.62b47e7f183d4b4e9feb.webp" alt="about" height="350px" width="410px" class="about-img">
+    <!-- about me -->
+    <section class="about-me" id="about-sec">
+      <div class="container2">
+        <div class="about-me-content">
+          <div class="image-left">
+            <img
+              src="images/working-emoji.c5325f52b5be329995a5.png"
+              alt="working-img"
+              height="60px"
+              width="60px"
+              class="working-img"
+            />
+            <img
+              src="images/about-img.62b47e7f183d4b4e9feb.webp"
+              alt="about"
+              height="350px"
+              width="410px"
+              class="about-img"
+            />
             <span>
-                <img src="images/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg" alt="text" height="190px" width="190px" class="text-img">
+              <img
+                src="images/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg"
+                alt="text"
+                height="190px"
+                width="190px"
+                class="text-img"
+              />
             </span>
-        </div>
-        <div class="text-left">
+          </div>
+          <div class="text-left">
             <p class="text-about">About me</p>
-            <h2 class="intro-head">Front-end Developer <br> based in Butwal, Nepal 📍</h2>
-            <p class="about-me-para">Hi, I'm Suprim Khatri, a budding frontend developer. I've learned the basics of HTML and CSS and am now focused on mastering JavaScript.<br><br> Next up, I'll be diving into Tailwind CSS and React to create dynamic, responsive websites.</p>
+            <h2 class="intro-head">
+              Front-end Developer <br />
+              based in Butwal, Nepal 📍
+            </h2>
+            <p class="about-me-para">
+              Hi, I'm Suprim Khatri, a budding frontend developer. I've learned
+              the basics of HTML and CSS and am now focused on mastering
+              JavaScript.<br /><br />
+              Next up, I'll be diving into Tailwind CSS and React to create
+              dynamic, responsive websites.
+            </p>
+          </div>
         </div>
-        </div>
-        </div>
-      </section>
-<!-- projects section -->
-      <section class="projects-section" id="projects">
-        <div class="container">
-            <h3 class="projects-head">Projects</h3>
-            <p class="projects-head-desc">Each project is a unique piece of development.</p>
-            <div class="project-container">
-            <div class="project-content">
-                <div class="project-image">
-                    <img src="project-images/project1.png" alt="project1" height="300px" width="300px">
-                </div>
-                <div class="project-desc">
-                    <h2>Ecommerce Website</h2>
-                    <p>The "Eshop" e-commerce UI features a clean, modern design with intuitive navigation. It showcases product promotions, trending items, and user-friendly features like free shipping. The white, black, and orange color scheme creates a professional look, while clear calls-to-action encourage user engagement.</p>
-                    <div class="made-with">
-                        <ul>
-                            <li>Html</li>
-                            <li>Css</li>
-                        </ul>
-                    </div>
-
-                    <div class="code-demo">
-                        <ul>
-                            <li><a href="https://github.com/SuprimKhatri77/Ecommerce-UI-Project" target="_blank">Code<i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://suprimkhatri77.github.io/Ecommerce-UI-Project/" target="_blank">Live Demo<i class="fa-regular fa-share-from-square share-icon"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+      </div>
+    </section>
+    <!-- projects section -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <h3 class="projects-head">Projects</h3>
+        <p class="projects-head-desc">
+          Each project is a unique piece of development.
+        </p>
+        <div class="project-container">
+          <div class="project-content">
+            <div class="project-image">
+              <img
+                src="project-images/p1.png"
+                alt="project1"
+                height="300px"
+                width="300px"
+                class="p-img"
+              />
             </div>
-            <div class="project-content">
-                <div class="project-desc">
-                    <h2>Starbuck UI</h2>
-                    <p>The "Eshop" e-commerce UI features a clean, modern design with intuitive navigation. It showcases product promotions, trending items, and user-friendly features like free shipping. The white, black, and orange color scheme creates a professional look, while clear calls-to-action encourage user engagement.</p>
-                    <div class="made-with">
-                        <ul>
-                            <li>Html</li>
-                            <li>Css</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="code-demo">
-                        <ul>
-                            <li><a href="https://github.com/SuprimKhatri77/Starbucks-clone" target="_blank">Code<i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://suprimkhatri77.github.io/Starbucks-clone/" target="_blank">Live Demo<i class="fa-regular fa-share-from-square share-icon"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project-image">
-                    <img src="project-images/project2.png" alt="project1" height="300px" width="300px" style="object-position: left;">
-                </div>
-            </div>
-            <div class="project-content">
-                <div class="project-image">
-                    <img src="project-images/project3.png" alt="project1" height="300px" width="300px">
-                </div>
-                <div class="project-desc">
-                    <h2>Library UI</h2>
-                    <p>The "Eshop" e-commerce UI features a clean, modern design with intuitive navigation. It showcases product promotions, trending items, and user-friendly features like free shipping. The white, black, and orange color scheme creates a professional look, while clear calls-to-action encourage user engagement.</p>
-                    <div class="made-with">
-                        <ul>
-                            <li>Html</li>
-                            <li>Css</li>
-                        </ul>
-                    </div>
-
-                    <div class="code-demo">
-                        <ul>
-                            <li><a href="https://github.com/SuprimKhatri77/Project-Library--Using-HTML-and-CSS-only" target="_blank">Code<i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://suprimkhatri77.github.io/Project-Library--Using-HTML-and-CSS-only/" target="_blank">Live Demo<i class="fa-regular fa-share-from-square share-icon"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-      </section>
-      <!-- contact section -->
-       <section class="contact-section" id="contact">
-        <div class="container contact-container">
-            <h3 style="color: #147efb; padding-bottom: 15px;">CONTACT</h3>
-            <p>You can contact me at 👇</p>
-            <div class="contact-options">
-                <div class="location-side">
-                    <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#147efb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-map-search"><path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5"></path><path d="M9 4v13"></path><path d="M15 7v5"></path><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path><path d="M20.2 20.2l1.8 1.8"></path></svg>
-                    </span>
-                    <div class="location-desc">
-                        <h3 style="color:#2d2e32">Location</h3>
-                        <p class="location">Butwal,Nepal</p>
-                    </div>
-                </div>
-                <div class="mail-side">
-                    <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#147efb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mail"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path><path d="M3 7l9 6l9 -6"></path></svg>
-                    </span>
-                    <div class="mail-desc">
-                        <h3 style="color:#2d2e32">Mail</h3>
-                        <p class="mail">Suprim.khatri77@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-       </section>
-       <!-- footer -->
-        <footer>
-            <div class="conatiner3">
-                <div class="footer-container">
-            <div class="left-footer">
-                Copyright © 2024. All rights are reserved
-            </div>
-            <div class="right-footer">
+            <div class="project-desc">
+              <h2>Ecommerce Website</h2>
+              <p>
+                The "Eshop" e-commerce UI features a clean, modern design with
+                intuitive navigation. It showcases product promotions, trending
+                items, and user-friendly features like free shipping. The white,
+                black, and orange color scheme creates a professional look,
+                while clear calls-to-action encourage user engagement.
+              </p>
+              <div class="made-with">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/suprim-khatri77/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-linkedin"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a></li>
-                    <li><a href="https://github.com/SuprimKhatri77" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a></li>
+                  <li>Html</li>
+                  <li>Css</li>
                 </ul>
+              </div>
+
+              <div class="code-demo">
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/SuprimKhatri77/Ecommerce-UI-Project"
+                      target="_blank"
+                      >Code<i class="fa-brands fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://suprimkhatri77.github.io/Ecommerce-UI-Project/"
+                      target="_blank"
+                      >Live Demo<i
+                        class="fa-regular fa-share-from-square share-icon"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+          <div class="project-content">
+            <div class="project-desc">
+              <h2>Starbuck UI</h2>
+              <p>
+                The "Eshop" e-commerce UI features a clean, modern design with
+                intuitive navigation. It showcases product promotions, trending
+                items, and user-friendly features like free shipping. The white,
+                black, and orange color scheme creates a professional look,
+                while clear calls-to-action encourage user engagement.
+              </p>
+              <div class="made-with">
+                <ul>
+                  <li>Html</li>
+                  <li>Css</li>
+                </ul>
+              </div>
+
+              <div class="code-demo">
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/SuprimKhatri77/Starbucks-clone"
+                      target="_blank"
+                      >Code<i class="fa-brands fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://suprimkhatri77.github.io/Starbucks-clone/"
+                      target="_blank"
+                      >Live Demo<i
+                        class="fa-regular fa-share-from-square share-icon"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div class="project-image">
+              <img
+                src="project-images/p2.png"
+                alt="project1"
+                height="300px"
+                width="300px"
+                class="p-img"
+              />
             </div>
-        </footer>
-        <script src="script.js"></script>
-</body>
+          </div>
+          <div class="project-content">
+            <div class="project-image">
+              <img
+                src="project-images/p3.png"
+                alt="project1"
+                height="300px"
+                width="300px"
+                class="p-img"
+              />
+            </div>
+            <div class="project-desc">
+              <h2>Library UI</h2>
+              <p>
+                The "Eshop" e-commerce UI features a clean, modern design with
+                intuitive navigation. It showcases product promotions, trending
+                items, and user-friendly features like free shipping. The white,
+                black, and orange color scheme creates a professional look,
+                while clear calls-to-action encourage user engagement.
+              </p>
+              <div class="made-with">
+                <ul>
+                  <li>Html</li>
+                  <li>Css</li>
+                </ul>
+              </div>
+
+              <div class="code-demo">
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/SuprimKhatri77/Project-Library--Using-HTML-and-CSS-only"
+                      target="_blank"
+                      >Code<i class="fa-brands fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://suprimkhatri77.github.io/Project-Library--Using-HTML-and-CSS-only/"
+                      target="_blank"
+                      >Live Demo<i
+                        class="fa-regular fa-share-from-square share-icon"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-container">
+        <h3 style="color: #147efb; padding-bottom: 15px">CONTACT</h3>
+        <p>You can contact me at 👇</p>
+        <div class="contact-options">
+          <div class="location-side">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#147efb"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="tabler-icon tabler-icon-map-search"
+              >
+                <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5"></path>
+                <path d="M9 4v13"></path>
+                <path d="M15 7v5"></path>
+                <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                <path d="M20.2 20.2l1.8 1.8"></path>
+              </svg>
+            </span>
+            <div class="location-desc">
+              <h3 style="color: #2d2e32">Location</h3>
+              <p class="location">Butwal,Nepal</p>
+            </div>
+          </div>
+          <div class="mail-side">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#147efb"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="tabler-icon tabler-icon-mail"
+              >
+                <path
+                  d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+                ></path>
+                <path d="M3 7l9 6l9 -6"></path>
+              </svg>
+            </span>
+            <div class="mail-desc">
+              <h3 style="color: #2d2e32">Mail</h3>
+              <p class="mail">Suprim.khatri77@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="conatiner3">
+        <div class="footer-container">
+          <div class="left-footer">
+            Copyright © 2024. All rights are reserved
+          </div>
+          <div class="right-footer">
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/suprim-khatri77/"
+                  target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-brand-linkedin"
+                  >
+                    <path
+                      d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                    ></path>
+                    <path d="M8 11l0 5"></path>
+                    <path d="M8 8l0 .01"></path>
+                    <path d="M12 16l0 -5"></path>
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/SuprimKhatri77" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-brand-github"
+                  >
+                    <path
+                      d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                    ></path></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
