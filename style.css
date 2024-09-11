@@ -529,7 +529,9 @@ header {
 .project-desc > h2 {
   text-align: center;
 }
-
+.code-demo ul li a {
+  color: #000 !important;
+}
 .made-with ul {
   display: flex;
   gap: 20px;
