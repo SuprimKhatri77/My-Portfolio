@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faq-container{
+    /* background: red; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    cursor:pointer;
+}
+details{
+    background: #212121;
+    color:#f9f9f9;
+    padding:1.5rem 10rem 1.5rem 2rem;
+    transition: all 0.3s ease-in-out;
+}

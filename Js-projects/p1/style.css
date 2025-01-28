@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:50px;
+}
+.container p{
+    font-size: 7rem;
+    font-weight: 600;
+}
+
+.buttons button{
+    border:none;
+    outline:none;
+    padding:0.7rem 5rem;
+    cursor:pointer;
+    font-size: 3rem;
+    margin-right: 30px;
+}

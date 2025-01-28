@@ -511,7 +511,7 @@ header {
   font-size: 1.1rem;
 }
 .project-image img {
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
   border-radius: 15px;
 }
@@ -523,8 +523,11 @@ header {
   gap: 20px;
 }
 .project-desc > p {
-  text-align: center;
+  text-align: justify;
   color: #767676;
+}
+.hidden{
+  display: none;
 }
 .project-desc > h2 {
   text-align: center;
